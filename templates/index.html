@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href={% static "css/index_style.css" %}>
+{% endblock %}
+
+{% block content %}
+    <div class="homepage">
+        <header>
+            <nav>
+                <p>Vineet Kumar</p>
+                <ul>
+                    <li><a href="about/">About Me</a></li>
+                    <li><a href="projects/">Projects</a></li>
+                    <li><a href="resume/">Resume</a></li>
+                    <li><a href="contact/">Say Hello!</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="text">
+                <h2>Namaste!</h2>
+                <h1>I'm Vineet</h1>
+                <h3>Aspiring Software Engineer</h3>
+            </div>
+            <div class="image">
+                <img src={% static "images/display_picture.png" %} alt="">
+            </div>
+        </main>
+    </div>
+{% endblock %}

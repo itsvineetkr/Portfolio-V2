@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* 
+font-family: "Raleway", sans-serif; 
+font-family: "Teko", sans-serif;
+font-family: "Playwrite GB S", cursive;
+font-family: "Montserrat", sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+.title {
+    font-family: "Playwrite GB S";
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    padding: 30px 0 30px 20px;
+    width: 700px;
+    max-width: 80vw;
+}
+
+.title::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+    border-radius: 3px;
+}
+
+.sub-title {
+    font-family: "Playwrite GB S";
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    padding: 40px 0 10px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.education-wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+}
+
+.education{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    min-width: 95%;
+    background-color: rgba(51, 51, 51, 0.611);
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 22%);
+}
+
+.education h2{
+    font-size: 1.3em;
+    font-weight: 300;
+    color: white;
+}
+
+.education h3{
+    font-size: 1.1em;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.797);
+}
+
+.education h4{
+    font-size: 1.2em;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.551);
+}
+
+.education h5{
+    font-size: 0.9em;
+    font-weight: 300;
+    padding-top: 5px;
+    color: rgba(255, 255, 255, 0.471);
+}
+
+.courses-wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+}
+
+.course{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    min-width: 95%;
+    background-color: rgba(51, 51, 51, 0.611);
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 22%);
+}
+
+.course h2{
+    font-size: 1.3em;
+    font-weight: 300;
+    color: white;
+}
+
+.course h5{
+    font-size: 0.9em;
+    font-weight: 300;
+    padding-top: 5px;
+    color: rgba(255, 255, 255, 0.471);
+}
+
+.course a{
+    text-decoration: none;
+    color: rgb(255, 180, 75);
+    font-size: 1.2em;
+    padding-top: 8px;
+}
+
+/*Skills Section Bar's CSS*/
+
+.skills, .skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill{
+    align-items: start;
+    padding: 5px;
+}
+
+.skill-title{
+    color: rgba(255, 255, 255, 0.726);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 0 0 5px 0;
+}
+
+.bar {
+    width: 60vw;
+    max-width: 350px;
+    height: 6px;
+    background: rgb(41, 41, 41);
+    border-radius: 3px;
+}
+
+.bar-per {
+    height: 6px;
+    background: rgb(255, 180, 75);
+    border-radius: 3px;
+    position: relative;
+}
+
+
+.languages{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.language{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.language h3{
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    padding-right: 10px;
+    min-width: 150px;
+}
+
+.language h4{
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.759);
+    min-width: 50px;
+}
+
+.projects, .contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 150px;
+}
+
+.sub-title-link .sub-title{
+    padding-top: 30px;
+}
+
+.sub-title-link .sub-title:hover, .sub-title-link .fa:hover{
+    color: rgb(255, 180, 75);
+}
+
+.sub-title-link .fa{
+    color: white;
+}
+
+.download{
+    width: 90vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding: 40px 0 20px 0;
+}
+
+.download a{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.753);
+    font-family: 'Poppins', sans-serif;
+}
+
+.download a:hover{
+    color: rgb(255, 180, 75);
+}
+
+.download i{
+    padding: 10px;
+}

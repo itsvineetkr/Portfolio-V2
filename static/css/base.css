@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+/* 
+font-family: "Raleway", sans-serif; 
+font-family: "Teko", sans-serif;
+font-family: "Playwrite GB S", cursive;
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(40, 40, 40, 0.666);
+    height: 100%;
+    padding: 16px 30px;
+    border-radius: 0 0 0 20px;
+}
+
+nav li{
+    padding: 0 20px;
+}
+
+nav ul a {
+    font-family: "Teko", sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul a:hover {
+    color: rgb(255, 180, 75);
+    transition: 0.2s;
+}
+
+nav p {
+    font-family: "Teko", sans-serif;
+    font-size: 1.4rem;
+    padding-left: 40px;
+    color: white;
+}
+
+@media (max-width: 576px) {
+    nav p {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav ul {
+        border-radius: 0 0 10px 10px;
+        padding: 20px 0;
+        margin-top: 0;
+        height: 70px;
+    }
+}

@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href={% static "css/about_style.css" %}>
+{% endblock %}
+
+{% block content %}
+    <header>
+        <nav>
+            <p>Vineet Kumar</p>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/projects/">Projects</a></li>
+                <li><a href="/resume/">Resume</a></li>
+                <li><a href="/contact/">Say Hello!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="title">About Me</div>
+            <div class="content">
+                <div class="about-text">
+                    Pursuing B.Tech in Computer Science and Technology with a specialization in AI from IET Lucknow.<br>
+                    Passionate about leveraging technology to solve real-world problems. Proficient in Python with a
+                    focus on Data Structures and Algorithms also currently expanding skills in web development.<br>
+                    Eager to contribute to innovative projects and also collaborate with like-minded professionals in
+                    the field of AI and technology. <br>Open to new opportunities and connections.
+                </div>
+                <div class="sub-title">
+                    What I'm doing?
+                </div>
+
+                <ul class="work-list">
+                    <li class="work-item">
+                        <div class="work-icon-box">
+                            <i class="fa-solid fa-code fa-2x"></i>
+                        </div>
+                        <div class="work-content-box">
+                            <div class="work-title">
+                                Web Development
+                            </div>
+                            <div class="work-text">
+                                Making websites and web application projects, learning new things and enhancing my
+                                skills.
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="work-item">
+                        <div class="work-icon-box">
+                            <i class="fa-solid fa-laptop-code fa-2x"></i>
+                        </div>
+                        <div class="work-content-box">
+                            <div class="work-title">
+                                Django and Fast API
+                            </div>
+                            <div class="work-text">
+                                Learning new frameworks for backend development.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="work-item">
+                        <div class="work-icon-box">
+                            <i class="fa-solid fa-keyboard fa-2x"></i>
+                        </div>
+                        <div class="work-content-box">
+                            <div class="work-title">
+                                Practicing DSA
+                            </div>
+                            <div class="work-text">
+                                Actively learning DSA and solving problems on coding platforms to improve my skills.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="work-item">
+                        <div class="work-icon-box">
+                            <i class="fa-solid fa-camera fa-2x"></i>
+                        </div>
+                        <div class="work-content-box">
+                            <div class="work-title">
+                                Photography & Blogging
+                            </div>
+                            <div class="work-text">
+                                Passionate about photography and blogging, capturing moments and sharing stories.
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+{% endblock %}

@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Projects{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href={% static "css/projects_style.css" %}>
+{% endblock %}
+
+{% block content %}
+    <header>
+        <nav>
+            <p>Vineet Kumar</p>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About Me</a></li>
+                <li><a href="/resume/">Resume</a></li>
+                <li><a href="/contact/">Say Hello!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="title">Projects</div>
+            <div class="project">
+                <div class="text">
+                    <div class="sub-title">
+                        Corevibe
+                    </div>
+                    <div class="about">
+                        It is a web application based on Django that monitors and gives suggestions
+                        to make yourself healthy. It is a health-monitoring app with AI features to tell
+                        you about your day and whether you're healthy using Ollama PHI-3 Mini
+                        LLM.
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="https://github.com/itsvineetkr/CoreVibe" target="_blank"><i class="fa-brands fa-github fa-xl"
+                                        style="color: white;"></i></a></li>
+                            <li><a href="https://itsvineetkr.pythonanywhere.com/" target="_blank"><i class="fa fa-external-link fa-xl"
+                                        aria-hidden="true" style="color: white;"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src={% static "images/project1.png" %} alt="">
+                </div>
+            </div>
+            
+            <div class="project">
+                <div class="text">
+                    <div class="sub-title">
+                        Encore'24
+                    </div>
+                    <div class="about">
+                        It was a front-end project for my college fest named Encore 24. It is made
+                        from scratch with basic HTML, CSS, and JS. I've also used some prebuilt JS
+                        Swiper Libraries to beautify the page.
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="https://github.com/itsvineetkr/Encore/" target="_blank"><i class="fa-brands fa-github fa-xl"
+                                        style="color: white;"></i></a></li>
+                            <li><a href="https://itsvineetkr.github.io/Encore/" target="_blank"><i class="fa fa-external-link fa-xl"
+                                        aria-hidden="true" style="color: white;"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src={% static "images/project2.png" %} alt="">
+                </div>
+            </div>
+            
+            <div class="project">
+                <div class="text">
+                    <div class="sub-title">
+                        My Portfolio
+                    </div>
+                    <div class="about">
+                        It is a website portfolio built on HTML5 and CSS3 for Frontend and Django for Backend.
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="https://github.com/itsvineetkr/CoreVibe" target="_blank"><i class="fa-brands fa-github fa-xl"
+                                        style="color: white;"></i></a></li>
+                            <li><a href="https://itsvineetkr.pythonanywhere.com/" target="_blank"><i class="fa fa-external-link fa-xl"
+                                        aria-hidden="true" style="color: white;"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src={% static "images/project3.png" %} alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

@@ -1,18 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
-
-/* 
-font-family: "Raleway", sans-serif; 
-font-family: "Teko", sans-serif;
-font-family: "Playwrite GB S", cursive;
-*/
-
-main {
+.homepage {
     display: flex;
-    padding-top: 12vh;
     justify-content: space-between;
     align-items: center;
+    height: 100vh;
 }
 
 .text {
@@ -20,7 +10,7 @@ main {
     color: white;
 }
 
-.image img {
+.homepage-image img {
     padding: 0 15vw 0 0;
     max-height: 65vh;
     max-width: 40vw;
@@ -51,9 +41,10 @@ main {
 }
 
 @media (max-width: 576px) {
-    main {
+    .homepage {
         flex-direction: column;
         max-width: 100vw;
+        height: 90vh;
     }
 
     .text {
@@ -62,13 +53,13 @@ main {
         left: -5vw;
     }
 
-    .image {
+    .homepage-image {
         position: absolute;
         top: 15vh;
         left: 20vw;
     }
 
-    .image img {
+    .homepage-image img {
         padding: 0 15vw 0 0;
         max-height: 65vh;
         max-width: 75vw;

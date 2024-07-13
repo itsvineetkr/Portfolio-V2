@@ -5,31 +5,246 @@
 
 {% block css %}
 <link rel="stylesheet" href={% static "css/index_style.css" %}>
+<link rel="stylesheet" href={% static "css/about_style.css" %}>
+<link rel="stylesheet" href={% static "css/contact_style.css" %}>
+<link rel="stylesheet" href={% static "css/projects_style.css" %}>
 {% endblock %}
 
 {% block content %}
-    <div class="homepage">
-        <header>
-            <nav>
-                <p>Vineet Kumar</p>
-                <ul>
-                    <li><a href="about/">About Me</a></li>
-                    <li><a href="projects/">Projects</a></li>
-                    <li><a href="resume/">Resume</a></li>
-                    <li><a href="contact/">Say Hello!</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
+    <header>
+        <nav>
+            <p>Vineet Kumar</p>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="resume/">Resume</a></li>
+                <li><a href="#contact">Say Hello!</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <main>
+        <div class="homepage">
             <div class="text">
                 <h2>Namaste!</h2>
-                <h1>I'm Vineet</h1>
+                <h1 class="homepage-name">I'm Vineet</h1>
                 <h3>Aspiring Software Engineer</h3>
             </div>
-            <div class="image">
+            <div class="homepage-image">
                 <img src={% static "images/display_picture.png" %} alt="">
             </div>
-        </main>
-    </div>
+        </div>
+    
+        <div class="aboutpage" id="about">
+            <div class="aboutpage-wrapper">
+                <div class="title about-title">About Me</div>
+                <div class="content">
+                    <div class="about-text">
+                        Pursuing B.Tech in Computer Science and Technology with a specialization in AI from IET Lucknow.<br>
+                        Passionate about leveraging technology to solve real-world problems. Proficient in Python with a
+                        focus on Data Structures and Algorithms also currently expanding skills in web development.<br>
+                        Eager to contribute to innovative projects and also collaborate with like-minded professionals in
+                        the field of AI and technology. <br>Open to new opportunities and connections.
+                    </div>
+                    <div class="sub-title">
+                        What I'm doing?
+                    </div>
+    
+                    <ul class="work-list">
+                        <li class="work-item">
+                            <div class="work-icon-box">
+                                <i class="fa-solid fa-code fa-2x"></i>
+                            </div>
+                            <div class="work-content-box">
+                                <div class="work-title">
+                                    Web Development
+                                </div>
+                                <div class="work-text">
+                                    Making websites and web application projects, learning new things and enhancing my
+                                    skills.
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="work-item">
+                            <div class="work-icon-box">
+                                <i class="fa-solid fa-laptop-code fa-2x"></i>
+                            </div>
+                            <div class="work-content-box">
+                                <div class="work-title">
+                                    Django and Fast API
+                                </div>
+                                <div class="work-text">
+                                    Learning new frameworks for backend development.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="work-item">
+                            <div class="work-icon-box">
+                                <i class="fa-solid fa-keyboard fa-2x"></i>
+                            </div>
+                            <div class="work-content-box">
+                                <div class="work-title">
+                                    Practicing DSA
+                                </div>
+                                <div class="work-text">
+                                    Actively learning DSA and solving problems on coding platforms to improve my skills.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="work-item">
+                            <div class="work-icon-box">
+                                <i class="fa-solid fa-camera fa-2x"></i>
+                            </div>
+                            <div class="work-content-box">
+                                <div class="work-title">
+                                    Photography & Blogging
+                                </div>
+                                <div class="work-text">
+                                    Passionate about photography and blogging, capturing moments and sharing stories.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-page">
+            <div class="projects-wrapper" id="projects">
+                <div class="title projects-title">Projects</div>
+                <div class="project">
+                    <div class="project-text">
+                        <div class="project-sub-title">
+                            Corevibe
+                        </div>
+                        <div class="project-about">
+                            It is a web application based on Django that monitors and gives suggestions
+                            to make yourself healthy. It is a health-monitoring app with AI features to tell
+                            you about your day and whether you're healthy using Ollama PHI-3 Mini
+                            LLM.
+                        </div>
+                        <div class="project-links">
+                            <ul>
+                                <li><a href="https://github.com/itsvineetkr/CoreVibe" target="_blank"><i class="fa-brands fa-github fa-xl"
+                                            style="color: white;"></i></a></li>
+                                <li><a href="https://itsvineetkr.pythonanywhere.com/" target="_blank"><i class="fa fa-external-link fa-xl"
+                                            aria-hidden="true" style="color: white;"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src={% static "images/project1.png" %} alt="">
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <div class="project-text">
+                        <div class="project-sub-title">
+                            Encore'24
+                        </div>
+                        <div class="project-about">
+                            It was a front-end project for my college fest named Encore 24. It is made
+                            from scratch with basic HTML, CSS, and JS. I've also used some prebuilt JS
+                            Swiper Libraries to beautify the page.
+                        </div>
+                        <div class="project-links">
+                            <ul>
+                                <li><a href="https://github.com/itsvineetkr/Encore/" target="_blank"><i class="fa-brands fa-github fa-xl"
+                                            style="color: white;"></i></a></li>
+                                <li><a href="https://itsvineetkr.github.io/Encore/" target="_blank"><i class="fa fa-external-link fa-xl"
+                                            aria-hidden="true" style="color: white;"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src={% static "images/project2.png" %} alt="">
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <div class="project-text">
+                        <div class="project-sub-title">
+                            My Portfolio
+                        </div>
+                        <div class="project-about">
+                            It is a website portfolio built on HTML5 and CSS3 for Frontend and Django for Backend.
+                        </div>
+                        <div class="project-links">
+                            <ul>
+                                <li><a href="https://github.com/itsvineetkr/CoreVibe" target="_blank"><i class="fa-brands fa-github fa-xl"
+                                            style="color: white;"></i></a></li>
+                                <li><a href="https://itsvineetkr.pythonanywhere.com/" target="_blank"><i class="fa fa-external-link fa-xl"
+                                            aria-hidden="true" style="color: white;"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src={% static "images/project3.png" %} alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-page" id="contact">
+            <div class="contactpage-wrapper">
+                <div class="title contact-title">Say Hello!</div>
+    
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14232.766388606447!2d81.00470129698492!3d26.897413812964768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999580d3b12bc29%3A0x76d2e00b35b85f8d!2sTakrohi%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1720346338819!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                
+                <div class="sub-title">
+                    Contact Form
+                </div>
+    
+                <form action="/#contact" class="form" method="POST">
+                    {% csrf_token %}
+                    <div class="input-wrapper">
+                        <input type="text" name="name" class="form-input" placeholder="Full name" required>
+                        <input type="email" name="email" class="form-input" placeholder="Email address" required>
+                    </div>
+                    
+                    <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+                    
+                    <div class="submit">
+                        <button class="form-btn" type="submit">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="open">
+            <h2>I'm open for work</h2>
+        </div>
+        <div class="email">
+            <h4>Get in touch(Click to copy)</h4>
+            <h1 id="text-to-copy" class="click-to-copy">itsvineetkr@gmail.com</h1>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="https://github.com/itsvineetkr" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/itsvineetkr" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+                <li><a href="https://www.instagram.com/vineetkumar.ind" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("text-to-copy").addEventListener("click", function () {
+            var text = document.getElementById("text-to-copy").innerText;
+            var textarea = document.createElement("textarea");
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+        });
+    </script>
+
 {% endblock %}

@@ -65,7 +65,17 @@
     color: hsl(0, 0%, 84%);
     text-align: left;
     line-height: 1.6;
-    padding: 10px 40px 25px 0;
+    padding: 10px 40px 10px 0;
+}
+
+.project-tech-stack{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+    color: hsla(0, 0%, 84%, 0.87);
+    text-align: left;
+    line-height: 1.6;
+    padding: 0px 40px 25px 0;
 }
 
 .project-links ul{

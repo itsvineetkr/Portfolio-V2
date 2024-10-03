@@ -7,16 +7,17 @@ This is the source code for my personal portfolio website built using the **Djan
 - **Django Backend:** Provides a dynamic and scalable backend.
 - **Frontend Design:** Fully responsive design using HTML, CSS (including CSS3 features), and JavaScript for enhanced interactivity.
 - **Project Showcase:** Displays detailed information about projects, including descriptions, technologies used, and links to live demos or source code.
+- **Resume:** It also has my resume built-in to showcase more about me including my education and other stuff.
 - **Contact Form:** Includes a functional contact form for visitors to reach out.
-- **Customizable Content:** Easily updateable from the Django admin panel.
 
-## Demo
 
-[Portfolio Live Demo](https://itsvineetkr.pythonanywhere.com/)
+## Check it out Live on server
+
+[Portfolio](https://itsvineetkr.pythonanywhere.com/)
 
 ## Technologies Used
 
 - **Backend:** Django Framework
 - **Frontend:** HTML5, CSS3, JavaScript
-- **Database:** SQLite (default Django database) / Can be replaced with PostgreSQL or any other RDBMS
-- **Deployment:** Deployed using services like Heroku, PythonAnywhere, or custom server (instructions below)
+- **Database:** SQLite (default Django database)
+- **Deployment:** Deployed using PythonAnywhere.

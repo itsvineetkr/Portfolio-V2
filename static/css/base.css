@@ -25,6 +25,45 @@ body {
     background-size: contain;
 }
 
+@keyframes appear {
+    0%{scale: 1; opacity: 0;}
+    40%{scale: 1; opacity: 1;}
+    80%{scale: 1; opacity: 1;}
+    100%{scale: 1; opacity: 0;}
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.project, .work-item, .about-text{
+    animation: appear linear both;
+    animation-timeline: view();
+    animation-range: cover;
+}
+    
+.homepage-name {
+    font-size: 3em;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff7c61, #ffdf2d, #ff9d00);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-animation 3s linear;
+}
+
+
+/* NAVIGATION BAR */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -65,59 +104,130 @@ nav p {
     color: white;
 }
 
-@media (max-width: 576px) {
+.nav-button i{
+    color: white;
+    font-size: 1.5em;
+}
+
+nav .nav-button {
+    display: none;
+    margin-left: 20px;
+}
+
+@media (max-width: 1000px){
+    nav{
+        padding: 10px 30px;
+    }
+    
+    nav ul{
+        display: none;
+    }
+    
+    nav .nav-button{
+        display: block;
+        z-index: 900;
+    }
+    
     nav p {
         display: none;
         margin: 0;
         padding: 0;
     }
-
-    nav {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    nav ul {
-        border-radius: 0 0 10px 10px;
-        padding: 20px 0;
-        margin-top: 0;
-        height: 70px;
-    }
 }
 
-@keyframes appear {
-    0%{scale: 1; opacity: 0;}
-    40%{scale: 1; opacity: 1;}
-    80%{scale: 1; opacity: 1;}
-    100%{scale: 1; opacity: 0;}
+
+
+.dropdown{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.632);
+    position: fixed;
+    z-index: 100;
+    top: 0px;
 }
 
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+.dropdown ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
 }
 
-.project, .work-item, .about-text{
-    animation: appear linear both;
-    animation-timeline: view();
-    animation-range: cover;
+.dropdown ul li{
+    list-style: none;
+    padding: 30px;
+    font-size: 2em;
 }
-    
-.homepage-name {
-    font-size: 3em;
-    font-weight: bold;
-    background: linear-gradient(90deg, #ff7c61, #ffdf2d, #ff9d00);
-    background-size: 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: gradient-animation 3s linear;
+
+.dropdown ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: "Teko", sans-serif;
+}
+
+.question-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid hsl(0, 0%, 22%);
+    border-radius: 14px;
+    outline: none;
+}
+
+.ask-query-input{
+    color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 13px 20px;
+    border: none;
+    outline: none;
+    width: 230px;
+    max-width: 80vw;
+}
+
+.question-form button{
+    background-color: rgba(41, 41, 41, 0.592);
+    font-size: 1.5em;
+    color: hsl(0, 0%, 48%);
+    outline: none;
+    border: none;
+    border-radius: 0 14px 14px 0;
+    padding: 13px 13px;
+}
+
+.answer-wrapper{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    background-color: rgba(60, 60, 60, 0.306);
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+}
+
+.answer{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    padding: 20px;
+    width: 600px;
+    max-width: 85vw;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.537);
 }

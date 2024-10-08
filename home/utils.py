@@ -1,7 +1,7 @@
 from huggingface_hub import InferenceClient
 
 def generate_response(prompt):
-    client = InferenceClient(api_key="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")
+    client = InferenceClient(api_key="")
 
     response = client.chat_completion(
 	model="mistralai/Mistral-7B-Instruct-v0.3",

@@ -21,7 +21,57 @@
 <body style="background-image: url({% static "images/bg.jpg" %}); height = 100%">
 
     {% block content %}{% endblock %}
+    <script>
+        document.querySelector(".nav-button").addEventListener("click", function(){
+            const dropdown = document.querySelector(".dropdown")
+            const body = document.querySelector("body")
+            if (dropdown.style.display == "flex"){
+                dropdown.style.display = "none"
+                body.style.overflowY = "auto"
+            }
+            else{
+                dropdown.style.display = "flex"
+                body.style.overflowY = "hidden"
+            }
+        });
 
+        const dropdownLinks = document.querySelectorAll('.dropdown a');
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                const dropdown = document.querySelector(".dropdown")
+                const body = document.querySelector("body")
+                if (dropdown.style.display == "flex"){
+                    dropdown.style.display = "none"
+                    body.style.overflowY = "auto"
+                }
+            });
+        });
+        
+        const answerText = document.querySelector('.answer p');
+        if (answerText.textContent.trim() !== "") {
+            const answerWrapper = document.querySelector(".answer-wrapper")
+            const body = document.querySelector("body")
+            answerWrapper.style.display = "flex"
+            body.style.overflowY = "hidden"
+        }
+        else{
+                answerWrapper.style.display = "none"
+                body.style.overflowY = "auto"
+        }
+
+        document.querySelector(".answer i").addEventListener("click", function(){
+            const answerWrapper = document.querySelector(".answer-wrapper")
+            const body = document.querySelector("body")
+            if (answerWrapper.style.display == "flex"){
+                answerWrapper.style.display = "none"
+                body.style.overflowY = "auto"
+            }
+            else{
+                answerWrapper.style.display = "flex"
+                body.style.overflowY = "hidden"
+            }
+        });
+    </script>
 </body>
 
 </html>

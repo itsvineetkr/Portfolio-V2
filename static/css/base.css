@@ -26,30 +26,49 @@ body {
 }
 
 @keyframes appear {
-    0%{scale: 1; opacity: 0;}
-    40%{scale: 1; opacity: 1;}
-    80%{scale: 1; opacity: 1;}
-    100%{scale: 1; opacity: 0;}
+    0% {
+        scale: 1;
+        opacity: 0;
+    }
+
+    40% {
+        scale: 1;
+        opacity: 1;
+    }
+
+    80% {
+        scale: 1;
+        opacity: 1;
+    }
+
+    100% {
+        scale: 1;
+        opacity: 0;
+    }
 }
 
 @keyframes gradient-animation {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
 }
 
-.project, .work-item, .about-text{
+.project,
+.work-item,
+.about-text {
     animation: appear linear both;
     animation-timeline: view();
     animation-range: cover;
 }
-    
+
 .homepage-name {
     font-size: 3em;
     font-weight: bold;
@@ -81,7 +100,7 @@ nav ul {
     border-radius: 0 0 0 20px;
 }
 
-nav li{
+nav li {
     padding: 0 20px;
 }
 
@@ -104,7 +123,7 @@ nav p {
     color: white;
 }
 
-.nav-button i{
+.nav-button i {
     color: white;
     font-size: 1.5em;
 }
@@ -114,30 +133,10 @@ nav .nav-button {
     margin-left: 20px;
 }
 
-@media (max-width: 1000px){
-    nav{
-        padding: 10px 30px;
-    }
-    
-    nav ul{
-        display: none;
-    }
-    
-    nav .nav-button{
-        display: block;
-        z-index: 900;
-    }
-    
-    nav p {
-        display: none;
-        margin: 0;
-        padding: 0;
-    }
-}
 
 
 
-.dropdown{
+.dropdown {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -151,7 +150,7 @@ nav .nav-button {
     top: 0px;
 }
 
-.dropdown ul{
+.dropdown ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,19 +159,28 @@ nav .nav-button {
     height: 500px;
 }
 
-.dropdown ul li{
+.dropdown ul li {
     list-style: none;
     padding: 30px;
     font-size: 2em;
 }
 
-.dropdown ul li a{
+.dropdown ul li a {
     color: white;
     text-decoration: none;
     font-family: "Teko", sans-serif;
 }
 
-.question-form{
+.question-form-wrapper{
+    background: linear-gradient(90deg, #ff8a00, #e52e71, #9b00e8, #ff8a00);
+    background-size: 200% 200%;
+    animation: gradient-border 3s linear infinite;
+    padding: 2px;
+    margin-top: 10px;
+    border-radius: 16px;
+}
+
+.question-form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,12 +188,12 @@ nav .nav-button {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 400;
-    border: 1px solid hsl(0, 0%, 22%);
     border-radius: 14px;
     outline: none;
+    background-color: black;
 }
 
-.ask-query-input{
+.ask-query-input {
     color: hsl(0, 0%, 98%);
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
@@ -193,24 +201,25 @@ nav .nav-button {
     padding: 13px 20px;
     border: none;
     outline: none;
-    width: 230px;
-    max-width: 80vw;
+    width: 600px;
+    max-width: 60vw;
+    background-color: transparent;
 }
 
-.question-form button{
+.question-form button {
     background-color: rgba(41, 41, 41, 0.592);
     font-size: 1.5em;
     color: hsl(0, 0%, 48%);
     outline: none;
     border: none;
-    border-radius: 0 14px 14px 0;
+    border-radius: 14px;
     padding: 13px 13px;
 }
 
-.answer-wrapper{
+.answer-wrapper {
     display: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100vw;
     height: 100vh;
@@ -221,13 +230,72 @@ nav .nav-button {
     top: 0px;
 }
 
-.answer{
+.answer {
     font-family: 'Poppins', sans-serif;
     color: white;
     display: flex;
     padding: 20px;
     width: 600px;
     max-width: 85vw;
+    max-height: 70vh;
+    overflow-y: auto;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.537);
+    margin-top: 85px;
+}
+
+.answer i {
+    color: rgb(233, 113, 113);
+    padding-left: 10px;
+}
+
+@media (max-width: 1300px) {
+    .ask-query-input {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .ask-query-input {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1000px) {
+    nav {
+        padding: 10px 30px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav .nav-button {
+        display: block;
+        z-index: 900;
+    }
+
+    nav p {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .question-form-wrapper {
+        margin-top: 0px;
+    }
+
+    .ask-query-input {
+        width: 500px;
+    }
+}
+
+@keyframes gradient-border {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
 }

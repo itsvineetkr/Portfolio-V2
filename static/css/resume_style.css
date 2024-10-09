@@ -251,3 +251,14 @@ font-family: 'Poppins', sans-serif;
 .download i{
     padding: 10px;
 }
+
+
+@media (max-width: 1000px){
+    nav p{
+        display: block;
+    }
+    
+    nav{
+        padding: 20px 30px;
+    }
+}

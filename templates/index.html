@@ -14,12 +14,14 @@
     <header>
         <nav>
             <p>Vineet Kumar</p>
-            <form action="/" method="post" class="question-form">
-                {% csrf_token %}
-                <input type="hidden" name="question-form">
-                <input type="text" name="question" class="ask-query-input" placeholder="Ask anything about me!" autocomplete="off" required>
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
+            <div class="question-form-wrapper">
+                <form action="/" method="post" class="question-form">
+                    {% csrf_token %}
+                    <input type="hidden" name="question-form">
+                    <input type="text" name="question" class="ask-query-input" placeholder="Ask anything about me!" autocomplete="off" required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -304,57 +306,6 @@
             document.execCommand("copy");
             document.body.removeChild(textarea);
         });
-
-        document.querySelector(".nav-button").addEventListener("click", function(){
-            const dropdown = document.querySelector(".dropdown")
-            const body = document.querySelector("body")
-            if (dropdown.style.display == "flex"){
-                dropdown.style.display = "none"
-                body.style.overflowY = "auto"
-            }
-            else{
-                dropdown.style.display = "flex"
-                body.style.overflowY = "hidden"
-            }
-        });
-
-        const dropdownLinks = document.querySelectorAll('.dropdown a');
-        dropdownLinks.forEach(link => {
-            link.addEventListener('click', (event) => {
-                const dropdown = document.querySelector(".dropdown")
-                const body = document.querySelector("body")
-                if (dropdown.style.display == "flex"){
-                    dropdown.style.display = "none"
-                    body.style.overflowY = "auto"
-                }
-            });
-        });
-        
-        const answerText = document.querySelector('.answer p');
-        if (answerText.textContent.trim() !== "") {
-            const answerWrapper = document.querySelector(".answer-wrapper")
-            const body = document.querySelector("body")
-            answerWrapper.style.display = "flex"
-            body.style.overflowY = "hidden"
-        }
-        else{
-                answerWrapper.style.display = "none"
-                body.style.overflowY = "auto"
-        }
-
-        document.querySelector(".answer i").addEventListener("click", function(){
-            const answerWrapper = document.querySelector(".answer-wrapper")
-            const body = document.querySelector("body")
-            if (answerWrapper.style.display == "flex"){
-                answerWrapper.style.display = "none"
-                body.style.overflowY = "auto"
-            }
-            else{
-                answerWrapper.style.display = "flex"
-                body.style.overflowY = "hidden"
-            }
-        });
-
     </script>
 
 {% endblock %}

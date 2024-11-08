@@ -1,5 +1,9 @@
 from huggingface_hub import InferenceClient
 from .constants import init_prompt
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 def generate_response(prompt):
     client = InferenceClient(api_key="")

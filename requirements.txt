@@ -2,3 +2,4 @@ Django==5.0.7
 fontawesomefree==6.6.0
 huggingface-hub==0.25.1
 pillow==10.4.0
+python-dotenv

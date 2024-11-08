@@ -1,0 +1,54 @@
+I am Vineet. I live in Lucknow, Uttar Pradesh, India. I'm a boy, 20 years old, 5 feet 9 inch tall and 58kg weight. 
+I'm pursuing BTech in Computer Science from Institute of Engineering and Technology, Lucknow. 
+I have've been learning Django, Web Development, Basic Machine Learning, and Data Structures.
+
+Pursuing B.Tech in Computer Science and Technology with a specialization in AI from IET Lucknow.
+Passionate about leveraging technology to solve real-world problems. Proficient in Python with a focus on Data Structures and Algorithms also currently expanding skills in web development.
+Eager to contribute to innovative projects and also collaborate with like-minded professionals in the field of AI and technology.
+Open to new opportunities and connections.
+
+What I am currently doing:
+Web Development
+Making websites and web application projects, learning new things and enhancing my skills.
+Django REST API
+Learning django framework for backend development.
+Practicing DSA
+Actively learning DSA and solving problems on coding platforms to improve my skills.
+AI & Machine Learning
+Studying about Machine Learning Libraries and LLM models to create great projects.
+
+I've made several projects which are: 
+1. Club Events Registrations & Management: A platform for college-wide club event organization, handling both individual and team-based event registrations, with admin controls for managing events and registrations data. Tech Stack: Django, REST API, JavaScript, HTML/CSS, SQLite
+2. Corevibe: It  is  a  web  application  based  on  Django  that  monitors  and  gives  suggestions  to  make yourself healthy. It is a health-monitoring app with AI features to tell you about your dayand whether you're healthy using Open AI's Chat GPT 4o. Tech Stack: Django, REST API, JavaScript, HTML/CSS, SQLite, GPT 4o
+3. Encore'24: It was a front-end project for my college fest named Encore 24. It is made from scratch with basic HTML, CSS, and JS. I've also used some prebuilt JS Swiper Libraries to beautify the page. Tech Stack: JavaScript, HTML/CSS
+4. My Portfolio: It is a website portfolio built on HTML5 and CSS3 for Frontend and Django for Backend. Tech Stack: Django, JavaScript, HTML/CSS
+
+Links for these projects are: 
+Club Events Registrations & Management: Github-> https://github.com/itsvineetkr/the_tech_society Deployed-> https://ietlucknow.pythonanywhere.com
+Corevibe: Github-> https://github.com/itsvineetkr/CoreVibe Deployed-> https://corevibe.pythonanywhere.com
+Encore'24: Github-> https://github.com/itsvineetkr/Encore Deployed-> https://itsvineetkr.github.io/Encore/
+Portfolio: Github-> https://github.com/itsvineetkr/portfolio Deployed-> https://itsvineetkr.pythonanywhere.com
+
+Brief about my projects:
+Club Events Registrations & Management
+A platform for college-wide club event organization, handling both individual and team- based event registrations, with admin controls for managing events and registrations data.
+Tech Stack: Django, REST API, JavaScript, HTML/CSS, SQLite
+
+Corevibe
+It is a web application based on Django that monitors and gives suggestions to make yourself healthy. It is a health-monitoring app with AI features to tell you about your day and whether you're healthy using Open AI's Chat GPT 4o.
+Tech Stack: Django, REST API, JavaScript, HTML/CSS, SQLite, GPT 4o
+
+Encore'24
+It was a front-end project for my college fest named Encore 24. It is made from scratch with basic HTML, CSS, and JS. I've also used some prebuilt JS Swiper Libraries to beautify the page.
+Tech Stack: JavaScript, HTML/CSS
+
+My Portfolio
+It is a website portfolio built on Django for Backend, HTML5, CSS3 and JS for Frontend and Mistral-7B-Instruct-v0.3 for answering questions.
+Tech Stack: Django, JavaScript, HTML/CSS
+
+My Social Handles are: 
+Linkedin: https://www.linkedin.com/in/itsvineetkr
+Instagram: https://www.instagram.com/vineetkumar.ind/
+
+My hobbies are listening to music, drawing, singing, cooking and traveling.
+I'm a quite personality and kind.
